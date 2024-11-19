@@ -1,4 +1,4 @@
-// Array dos caracteres
+// Array's
 let a = [
      {nome: "Ω",
      resposta: "Omega"},
@@ -14,7 +14,7 @@ let sorteados = []
 
 let botões = [document.getElementById("button1"), document.getElementById("button2"), document.getElementById("button3")];
 
-// Função para mudar o texto na tela
+// Função p/gerar textos
 function eText(id, text){
     let campo = document.getElementById(id);
     campo.innerHTML = text;
@@ -30,14 +30,13 @@ function randomGenerator(){
     buttonShuffler(r);
 }
 
-function buttonShuffler(correto) {
+// Função Embaralhar Botões
+function buttonShuffler() {
 }
 
-function verifier(event){
-    let buttonClicked = event.target.innerHTML;
-    if(buttonClicked === correto){
-        return randomGenerator();
-    }
-} 
+// Função Verificar Resposta
+
+function verifier(event) {
+}
 
 randomGenerator()
